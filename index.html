@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/nice-select.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- CONNECT FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  	<!-- description&SEO -->
+      <meta property="og:title" content="">
+      <meta property="og:description" content="">
+      <meta property="og:image" content="./img/thumbnail.png">
+      <meta property="og:type" content="website">
+      <meta property="og:site_name" content="">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="revisit-after" content="15 days">
+      <meta name="robots" content="all">
+      <meta name="rating" content="">
+     <!-- end description&SEO -->
+ 
+     <!-- browser tab background -->
+      <meta name="msapplication-TileColor" content="currentColor">
+      <meta name="theme-color" content="currentColor">
+     <!-- end browser tab background -->
+</head>
+<body>
+
+    <!-- MOBILE MENU -->
+    <nav class="mobile-menu" role="navigation">
+        <div class="container">
+            <button class="btn btn-link d-lg-none mobile-close" role="button">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.74035 8.74042C9.10484 8.37593 9.69579 8.37593 10.0603 8.74042L23.2596 21.9398C23.6241 22.3042 23.6241 22.8952 23.2596 23.2597C22.8951 23.6242 22.3042 23.6242 21.9397 23.2597L8.74035 10.0604C8.37586 9.69587 8.37586 9.10491 8.74035 8.74042Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.74036 23.2597C8.37587 22.8952 8.37587 22.3043 8.74036 21.9398L21.9397 8.74045C22.3042 8.37596 22.8951 8.37596 23.2596 8.74045C23.6241 9.10494 23.6241 9.69589 23.2596 10.0604L10.0603 23.2597C9.69581 23.6242 9.10485 23.6242 8.74036 23.2597Z" fill="currentColor"/>
+                </svg>
+            </button>
+            <ul class="mobile-nav">
+                <li><a href="" class="mobile-link">Цифры</a></li>
+                <li><a href="" class="mobile-link">Сделки онлайн</a></li>
+                <li><a href="" class="mobile-link">о компании</a></li>
+                <li><a href="" class="mobile-link">как начать</a></li>
+                <li><a href="" class="mobile-link">тарифы</a></li>
+                <li><a href="" class="mobile-link">отзывы</a></li>
+                <li><a href="" class="mobile-link">FAQ</a></li>
+            </ul>
+            <nav class="nav-btn">
+                <a href="#" class="btn btn-secondary" role="link">регистрация</a>
+                <a href="#" class="btn btn-outline-secondary" role="link">вход</a>
+            </nav>
+        </div>
+    </nav>
+    <!-- END MOBILE MENU -->
+    
+    <!-- HEADER -->
+    <header class="bg-dark py-2">
+        <div class="container d-flex align-items-center">
+            <img src="./img/logotype.svg" alt="TradeBlade" class="logo d-lg-none d-xl-block">
+            <img src="./img/logo-emblem.svg" alt="TradeBlade" class="logo-emblema d-none d-lg-block d-xl-none">
+            
+            <!-- DISPLAY DESKTOP -->
+            <nav class="d-none d-lg-flex mx-auto" role="navigation">
+                <ul class="nav-list">
+                    <li><a href="" class="nav-link">Цифры</a></li>
+                    <li><a href="" class="nav-link">Сделки онлайн</a></li>
+                    <li><a href="" class="nav-link">о компании</a></li>
+                    <li><a href="" class="nav-link">как начать</a></li>
+                    <li><a href="" class="nav-link">тарифы</a></li>
+                    <li><a href="" class="nav-link">отзывы</a></li>
+                    <li><a href="" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-btn ms-auto">
+                <a href="#" class="btn btn-sm btn-outline-secondary d-none d-lg-inline-block" role="link">вход</a>
+                <a href="#" class="btn btn-sm btn-secondary d-none d-lg-inline-block" role="link">регистрация</a>
+                <button class="btn btn-link d-lg-none mobile-open" role="button">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.39999 9.33324C4.39999 8.81777 4.81786 8.3999 5.33333 8.3999H26.6667C27.1821 8.3999 27.6 8.81777 27.6 9.33324C27.6 9.8487 27.1821 10.2666 26.6667 10.2666H5.33333C4.81786 10.2666 4.39999 9.8487 4.39999 9.33324Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.39999 16C4.39999 15.4845 4.81786 15.0667 5.33333 15.0667H26.6667C27.1821 15.0667 27.6 15.4845 27.6 16C27.6 16.5154 27.1821 16.9333 26.6667 16.9333H5.33333C4.81786 16.9333 4.39999 16.5154 4.39999 16Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.39999 22.6665C4.39999 22.151 4.81786 21.7332 5.33333 21.7332H26.6667C27.1821 21.7332 27.6 22.151 27.6 22.6665C27.6 23.182 27.1821 23.5998 26.6667 23.5998H5.33333C4.81786 23.5998 4.39999 23.182 4.39999 22.6665Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <!-- HERO SECTION -->
+        <section class="bg-dark hero pt-5">
+            <div class="container mb-5">
+                <div class="row d-flex flex-column-reverse align-items-start flex-lg-row">
+                    <div class="col-lg-6">
+                        <h1 class="hero-title">
+                            моментально Копируй сделки профи трейдеров
+                        </h1>
+                        <h2 class="hero-subtitle text-muted">
+                            Начни копировать сделки с успешной командой профессиональных трейдеров в автоматическом режиме.
+                        </h2>
+                        <form class="form form-dark mb-2" action="" method="post">
+                            <input type="text" placeholder="Ваш e–mail">
+                            <button class="btn btn-secondary" type="submit" role="button">начать</button>
+                        </form>
+                        <small>5 дней бесплатного пользования</small>
+                    </div>
+                    <div class="d-none d-lg-flex col-lg-5 offset-lg-1">
+                        <img src="./img/hero-img.svg" alt="" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="bg-white edge pb-5">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-lg-2 mb-3 mb-lg-5">
+                        <h2 class="section-title my-0 split-text">
+                            Цифры
+                        </h2>
+                        <small class="text-muted">Cентябрь 2022</small>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 offset-lg-1 d-flex flex-column">
+                        <p class="point-caption mb-2 mb-lg-1">Торговой прибыли</p>
+                        <p class="point-value"><span class="number">2756</span>%</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 d-flex flex-column">
+                        <p class="point-caption mb-2 mb-lg-1">фьючерсных и спотовых сделок</p>
+                        <p class="point-value"><span class="number">67</span></p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 d-flex flex-column">
+                        <p class="point-caption mb-2 mb-lg-1">прибыль подписчиков</p>
+                        <p class="point-value"><span class="number">375000</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CRYPTO CARDS -->
+        <section class="bg-dark pt-3 oveflow-hidden">
+            <div class="container">
+                <div class="mb-3 mb-lg-5">
+                    <h2 class="section-title mb-0 split-text">
+                        Прошедшие сделки
+                    </h2>
+                    <small class="text-green">· Онлайн</small>
+                </div>
+                <div class="cards-crypto mb-5">
+                    <!-- SLIDER -->
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="card-item">
+                                    <p class="card-currency">NEAR/USDT</p>
+                                    <span class="card-time">SPOT · 1 мин. назад</span>
+                                    <div class="card-profit">
+                                        <span class="label">Прибыль</span>
+                                        <span class="percent">16.3%&uarr;</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span class="card-target">Цель 3</span>
+                                        <span class="card-date">Дата входа 06.10.2022</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="card-item">
+                                        <p class="card-currency">NEAR/USDT</p>
+                                        <span class="card-time">SPOT · 1 мин. назад</span>
+                                        <div class="card-profit">
+                                            <span class="label">Прибыль</span>
+                                            <span class="percent">16.3%&uarr;</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="card-target">Цель 3</span>
+                                            <span class="card-date">Дата входа 06.10.2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="card-item">
+                                        <p class="card-currency">NEAR/USDT</p>
+                                        <span class="card-time">SPOT · 1 мин. назад</span>
+                                        <div class="card-profit">
+                                            <span class="label">Прибыль</span>
+                                            <span class="percent">16.3%&uarr;</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="card-target">Цель 3</span>
+                                            <span class="card-date">Дата входа 06.10.2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="card-item">
+                                        <p class="card-currency">NEAR/USDT</p>
+                                        <span class="card-time">SPOT · 1 мин. назад</span>
+                                        <div class="card-profit">
+                                            <span class="label">Прибыль</span>
+                                            <span class="percent">16.3%&uarr;</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="card-target">Цель 3</span>
+                                            <span class="card-date">Дата входа 06.10.2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="card-item">
+                                        <p class="card-currency">NEAR/USDT</p>
+                                        <span class="card-time">SPOT · 1 мин. назад</span>
+                                        <div class="card-profit">
+                                            <span class="label">Прибыль</span>
+                                            <span class="percent">16.3%&uarr;</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="card-target">Цель 3</span>
+                                            <span class="card-date">Дата входа 06.10.2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="card-item">
+                                        <p class="card-currency">NEAR/USDT</p>
+                                        <span class="card-time">SPOT · 1 мин. назад</span>
+                                        <div class="card-profit">
+                                            <span class="label">Прибыль</span>
+                                            <span class="percent">16.3%&uarr;</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="card-target">Цель 3</span>
+                                            <span class="card-date">Дата входа 06.10.2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!-- SCROLLBAR -->
+                        <div class="swiper-scrollbar"></div>
+
+                    <!-- END SLIDER -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US -->
+        <section class="bg-white shadow edge pb-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-xxl-4">
+                        <h2 class="section-title my-0 split-text">
+                            О компании
+                        </h2>
+                        <p>
+                            Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным брокером биржи Binance.
+                        </p>
+                        <p>
+                            Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1 offset-xxl-2">
+                        <section class="get-free mt-3 mt-md-0">
+                            <h3 class="get-free__title">
+                                Попробуйте сейчас и получите 5 дней бесплатного пользования
+                            </h3>
+                            <form class="form form-light form-column" action="" method="post">
+                                <input type="text" placeholder="Ваш e–mail">
+                                <button class="btn btn-secondary" type="submit" role="button">попробовать</button>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TARIFFS -->
+        <section class="bg-dark py-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-xl-8 mx-auto">
+                        <h2 class="section-title split-text">
+                            тарифы
+                        </h2>
+                        <div class="tabs mb-3 mb-lg-5">
+                            <button class="btn btn-sm btn-link active" type="button" role="button">СПОТ</button>
+                            <button class="btn btn-sm btn-link" type="button" role="button">фьючерс</button>
+                        </div>
+                        <div class="cards cards-tariff mb-5">
+
+                            <div class="card-item bg-outline-primary">
+                                <h3 class="card-title">STANDART</h3>
+                                <ul class="card-list">
+                                    <li>
+                                        <span>Ручной трейдинг</span>
+                                    </li>
+                                    <li>
+                                        <span>Автоматическое или полуавтоматическое копирование сделок</span>
+                                    </li>
+                                    <li>
+                                        <span>Личный кабинет со статистикой</span>
+                                    </li>
+                                    <li>
+                                        <span>Среднесрочные сделки с уровнями набора портфеля</span>
+                                    </li>
+                                </ul>
+                                <div class="card-footer">
+                                    <div class="card-price">
+                                        <span class="current">$234</span>
+                                        <span class="sale">-35%</span>
+                                    </div>
+                                    <select name="mounth" id="">
+                                        <option value="12">12 месяцев</option>
+                                        <option value="11">11 месяцев</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-secondary flex-column" type="submit" role="button">
+                                    <span>Попробовать</span>
+                                    <span class="btn-caption">5 дней бесплатно</span>
+                                </button>
+                            </div>
+
+                            <div class="card-item bg-primary">
+                                <h3 class="card-title">VIP</h3>
+                                <ul class="card-list">
+                                    <li>
+                                        <span>Ручной трейдинг</span>
+                                    </li>
+                                    <li>
+                                        <span>Автоматическое или полуавтоматическое копирование сделок</span>
+                                    </li>
+                                    <li>
+                                        <span>Личный кабинет со статистикой</span>
+                                    </li>
+                                    <li>
+                                        <span>Краткосрочные, среднесрочные и инвест сделки</span>
+                                    </li>
+                                    <li>
+                                        <span>Доступ в Vip чат с командой</span>
+                                    </li>
+                                    <li>
+                                        <span>Наш авторский курс по трейдингу</span>
+                                    </li>
+                                </ul>
+                                <div class="card-footer">
+                                    <div class="card-price">
+                                        <span class="current">$234</span>
+                                        <span class="sale">-35%</span>
+                                    </div>
+                                    <select name="mounth" id="">
+                                        <option value="12">12 месяцев</option>
+                                        <option value="11">11 месяцев</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-secondary flex-column" type="submit" role="button">
+                                    <span>Попробовать</span>
+                                    <span class="btn-caption">5 дней бесплатно</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="bg-white pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-xl-8 mx-auto">
+                        <h2 class="section-title split-text">
+                            часто задаваемые вопросы
+                        </h2>
+                        <div class="faq accordion">
+
+                            <div class="faq-item">
+                                <h3 class="faq-title" id="ask-1">
+                                    <button class="faq-toggle" role="button" aria-expanded="true" aria-controls="ask-1-content">Что такое TradeBlade?</button>
+                                </h3>
+                                <div class="faq-answer" role="region" aria-labelledby="ask-1" aria-hidden="false" id="ask-1-content">
+                                    <div>
+                                        <p>
+                                            Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным брокером биржи Binance. 
+                                        </p>
+                                        <p>
+                                            Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3 class="faq-title" id="ask-2">
+                                    <button class="faq-toggle" role="button" aria-expanded="false" aria-controls="ask-2-content">Что TradeBlade предлагает инвесторам?</button>
+                                </h3>
+                                <div class="faq-answer" role="region" aria-labelledby="ask-2" aria-hidden="true" id="ask-2-content">
+                                    <div>
+                                        <p>
+                                            Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным брокером биржи Binance. 
+                                        </p>
+                                        <p>
+                                            Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3 class="faq-title" id="ask-3">
+                                    <button class="faq-toggle" role="button" aria-expanded="false" aria-controls="ask-3-content">Должен ли я перевести свои средства на TradeBlade?</button>
+                                </h3>
+                                <div class="faq-answer" role="region" aria-labelledby="ask-3" aria-hidden="true" id="ask-3-content">
+                                    <div>
+                                        <p>
+                                            НУ ДА 🤷‍♂️
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5 mb-md-0">
+                    <div class="row">
+                        <div class="col-6 col-lg-12">
+                            <p class="footer-caption m-0">Быстрая навигация</p>
+                        </div>
+                        <div class="col-6 col-lg-12 d-lg-flex align-items-lg-end">
+                            <nav role="navigation">
+                                <ul class="nav-list flex-column flex-lg-row align-items-start">
+                                    <li><a href="" class="nav-link">Цифры</a></li>
+                                    <li><a href="" class="nav-link">Сделки онлайн</a></li>
+                                    <li><a href="" class="nav-link">о компании</a></li>
+                                    <li><a href="" class="nav-link">tradeblad это</a></li>
+                                    <li><a href="" class="nav-link">тарифы</a></li>
+                                    <li><a href="" class="nav-link">FAQ</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-lg-flex flex-column justify-content-between align-items-end">
+                    <img src="./img/logotype.svg" alt="TradeBlade" class="logo mb-5 mb-lg-0">
+                    <small class="copyright">© 2022 TradeBlade. All rights reserved</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.nice-select.min.js"></script>
+    <script src="./js/nice-select-init.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/swiper-init.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type"></script>
+    <script src="./js/gsap-init.js"></script>
+</body>
+</html>
